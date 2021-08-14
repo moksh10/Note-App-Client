@@ -1,27 +1,21 @@
 import React from 'react'
 import './home.css'
-import { ReactComponent as Background } from './Home_Background.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPaperPlane} from '@fortawesome/free-solid-svg-icons' 
+import { ReactComponent as HomeBackground } from './Home_Background.svg'
+import Header from '../Header/Header'
+import Footer1 from '../Footer/Footer1'
 function Home() {
-    const logoIcon = <FontAwesomeIcon icon={faPaperPlane} className="logo-icon"/>
     return (
         <>
-        <div className="header" data-aos="fade-down">
-            <div className="logo">{logoIcon}  Note Dusk</div>
-            <div className="login">
-                <div className="login-btn"><a href="/" >Log In</a></div>
-            </div>
-        </div>
+        <Header />
         <div className="main" data-aos="fade-up">
             <div>The simplest way to keep notes</div>
             <div>Tame your work, organize your life. Remember everything and tackle any project with all your notes in one place.</div>
-            <div className="signup">
-                <div className="signup-btn"><a href="/" >Sign Up Now</a></div>
+            <div className="main-btn-area">
+                <div className="main-btn"><a href="/" >Sign Up Now</a></div>
             </div>
         </div>
-        <div className="svg_bg">
-        <Background width="70%" height="10%" />
+        <div className="home_bg">
+        <HomeBackground width="70%" height="10%" />
         </div>
         <div className="features">
             <div data-aos="fade-down">Comprehensive underneath, simple on the surface</div>
@@ -47,11 +41,7 @@ function Home() {
             </div>
 
         </div>
-        <div className="footer">
-            Created By: Moksh Teng
-        </div>
-        
-
+        <Footer1 />
         </>
     )
 }

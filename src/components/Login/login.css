@@ -1,0 +1,73 @@
+.login-main-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 59vh;
+}
+.login-main-box > .login-container
+{
+    width:50%;
+    
+
+}
+.login-container > h1
+{
+    color:var(--blue);
+    margin: 0;
+    font-size: 5vmin;
+    line-height: 1.2;
+}
+.login-container > p
+{
+    margin: 0;
+    font-size: 2.5vmin;
+}
+.login-form
+{
+
+    margin-top: 3vmin;
+    height:auto;
+}
+.login-form > label
+{
+    font-size: 2.2vmin;
+    display: inline-block;
+    margin-bottom: 1vmin;
+
+}
+.login-form > input
+{
+    min-width:70%;
+    height:7vmin;
+    border: 0;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    color:white;
+    outline: 0;
+    margin-bottom: 2vmin;
+    padding:1vmin;
+    background-color: rgb(68, 68, 68);
+}
+.login-form > input:focus
+{
+    outline: 0;
+    border: .1vmin solid var(--blue);
+
+}
+.login-form > .login-submit
+{
+    border: 0;
+    position: relative;
+    margin: 2vmin auto 2vmin auto;
+    height:7vmin;
+    min-width: 70%;
+    letter-spacing: .2vmin;
+    padding: 1vmin;
+    font-size: 3vmin;
+    transition: all .25s;
+    border-radius:.5vmin;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+

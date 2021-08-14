@@ -1,0 +1,11 @@
+.footer
+{
+    background-color: rgba(44, 44, 44, 0.623);
+    min-height: 10vh;
+    display: flex;
+    font-size: 4vmin;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+}

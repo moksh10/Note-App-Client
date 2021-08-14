@@ -1,0 +1,6 @@
+.waves
+{
+    transform: scale(1.9,1);
+    position: fixed;
+    bottom: 0;
+}

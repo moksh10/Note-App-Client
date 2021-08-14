@@ -1,0 +1,52 @@
+.header
+{
+    min-height: 8vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vmin;
+
+}
+.header > .logo
+{
+    font-size: 6vmin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: .1vmin;
+    min-width: 45%;
+}
+
+.header > .logo > .logo-icon
+{
+    font-size: 5vmin;
+    transform: rotateX(180deg);
+    margin-right: 1vmin;
+}
+.header > .sign
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+
+
+
+}
+.header > .sign > .sign-btn
+{
+    padding:1.25vmin;
+    border-radius: .75vmin;
+    font-size: 3vmin;
+    transition: all .25s;
+    cursor: pointer;
+    background-color: var(--blue);
+}
+.sign-btn:hover
+{
+    opacity: .6;
+}
+.sign-btn > a
+{
+    text-decoration: none;
+}

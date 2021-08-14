@@ -4,6 +4,9 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
+:root {
+    --blue: #0058dd;
+}
 html
 {
   scroll-behavior: smooth;
