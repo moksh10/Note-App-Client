@@ -1,0 +1,175 @@
+.header
+{
+    min-height: 8vh;
+    min-width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    padding-top: 2vmin;
+
+}
+.header > .logo
+{
+    font-size: 6vmin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: .1vmin;
+    min-width: 45%;
+}
+
+.header > .logo .logo-icon
+{
+    font-size: 5vmin;
+    transform: rotateX(180deg);
+    margin-right: 1vmin;
+}
+.header > .login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+
+
+
+}
+.header > .login > .login-btn
+{
+    padding:1.25vmin;
+    border-radius: .75vmin;
+    font-size: 3vmin;
+    transition: all .25s;
+    cursor: pointer;
+    background-color: rgb(0, 88, 221);
+}
+.login-btn:hover
+{
+    opacity: .6;
+}
+.login-btn > a
+{
+    text-decoration: none;
+}
+.main,.features
+{
+    margin-top: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.main > div:first-child
+{
+    font-size: 8vmin;
+    font-weight: bold;
+    display: flex;
+    max-width:50%;
+    margin-bottom: 3vmin;
+    line-height: 1.2;
+    text-align: center;
+
+    
+}
+.main > div
+{
+    max-width: 55%;
+    font-size: 3.2vmin;
+    margin-bottom: 3vmin;
+    text-align: center;
+
+}
+.main > .signup
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+}
+
+
+.main > .signup > .signup-btn
+{
+    padding:1.4vmin;
+    border-radius: .75vmin;
+    font-size: 3vmin;
+    transition: all .25s;
+    cursor: pointer;
+    background-color: #0058dd;
+}
+.signup-btn:hover
+{
+    opacity: .6;
+}
+.signup-btn > a
+{
+    text-decoration: none;
+}
+.svg_bg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:4vmin 0 4vmin 0;
+}
+
+.features .features-box
+{
+    margin-bottom: 5vmin;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.features> div:first-child
+{
+    font-size: 7vmin;
+    font-weight: bold;
+    display: flex;
+    max-width:50%;
+    margin-bottom: 6vmin;
+    line-height: 1.2;
+    text-align: center;
+
+}
+.features-box
+{
+    display: flex;
+    max-width: 50%;
+    flex-wrap: wrap;
+}
+.features-box>div
+{
+    width: 40%;
+    text-align: center;
+}
+.features-box >div > h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vmin;
+    
+}
+
+.features-box >div > .feature-info
+{
+    max-width: 100%;
+    padding: 2vmin;
+    text-align: center;
+    letter-spacing: .1vmin;
+    font-size: 2vmin;
+}
+.footer
+{
+    background-color: rgb(39, 39, 39);
+    min-height: 10vh;
+    display: flex;
+    font-size: 4vmin;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
