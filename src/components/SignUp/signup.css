@@ -76,3 +76,10 @@
 {
     opacity:.6;
 }
+.register-form > .register-submit:disabled
+{
+    background-color: transparent;
+    border: .2vmin solid grey;
+    color:grey;
+}
+
