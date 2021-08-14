@@ -1,0 +1,205 @@
+.note-app
+{
+    min-height:100vh;
+    display: grid;
+    min-width:74vw;
+    grid-template-columns:30% 70% ;
+    grid-template-rows: 10vh 90vh;
+    
+}
+
+.note-app > *
+{
+    background-color: rgb(29,35,39);
+}
+
+.note-app > .header1
+{
+    display: flex;
+    padding: 1vmin;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    font-weight: 500;
+    border: .05vmin solid grey;
+    
+
+}
+.note-app > .header2
+{
+    display: flex;
+    align-items: center;
+    font-size: 3vmin;
+    padding: 0 3vmin 0 4vmin;
+    justify-content: space-between;
+    border: .05vmin solid grey;
+    color:grey; 
+}
+.header2 > div
+{
+    
+    transition: all .27s;
+    cursor: pointer;
+}
+
+
+.note-app > .sidebar
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    
+    border: .05vmin solid grey;
+    
+    
+}
+
+.sidebar::-webkit-scrollbar {
+    width: .8vmin;
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: rgb(43, 43, 43);
+  }
+   
+  .sidebar::-webkit-scrollbar-thumb {
+    background:rgb(38, 38, 87);
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.sidebar-search
+{
+    height:7vmin;
+    margin-bottom: 2vmin;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: .1vmin solid grey;
+
+}
+.sidebar-search >div
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+    height:100%;
+    cursor: pointer;
+  
+}
+.sidebar-search > input
+{
+    display: inline-block;
+    width: 80%;
+    padding-left: 1vmin;
+    color:white;
+    font-size: 2.5vmin;
+     border: 0;
+    background-color: transparent;
+}
+.sidebar-search > input:focus
+{
+    outline: 0;
+    border: 0;
+}
+.note-main
+{
+    border: .05vmin solid grey;
+    padding: 1vmin;
+}
+.note-app > .note-main > .note-main-title
+{
+    min-height:6%;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2vmin;
+   align-items: center;
+
+}
+.note-main-title > input
+{
+    display: inline-block;
+    background-color: rgb(29,35,39);
+    border: 0;
+    outline: 0;
+    font-size: 5vmin;
+    letter-spacing: .1vmin;
+    border-bottom: .2vmin solid grey;
+    width: 70%;
+    padding-top: 2vmin;
+    padding-left:0;
+   padding-bottom: .5vmin;
+    min-height: 100%;
+}
+
+.note-main-title > input:focus
+{
+    outline: 0;
+    border-bottom: .2vmin solid grey;
+}
+.note-app > .note-main > .note-main-body
+{
+    height:88%;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2vmin;
+
+}
+.note-main-body > textarea
+{
+    display: inline-block;
+    background-color: rgb(29,35,39);
+    border: 0;
+    outline: 0;
+    font-size: 3vmin;
+    color:rgb(138, 138, 138);
+    line-height: 1.2;
+    letter-spacing: .15vmin;
+    min-width: 90%;
+    padding: 0;
+    max-width: 90%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+
+.note-main-body > textarea:focus
+{
+    outline: 0;
+    border:0;
+}
+
+.save-btn
+{
+    padding: 1vmin;
+    margin-left: 2vmin;
+    font-size: 3vmin;
+    background-color: var(--blue);
+    border-radius: 1vmin;
+    border: 0;
+    transition: all .2s;
+    cursor: pointer;
+}
+.save-btn:disabled
+{
+    background-color: transparent;
+    border: .1vmin solid grey;
+    color:grey;
+}
+.save-btn:hover
+{
+    opacity: .6;
+}
+@media screen and (max-width:720px) {
+    .note-app
+   {
+       min-height:100vh;
+       display: grid;
+       min-width:74vw;
+       grid-template-columns:40% 60% ;
+       grid-template-rows: 8vh 92vh;
+       
+   }
+   }

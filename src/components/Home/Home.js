@@ -15,7 +15,7 @@ function Home() {
             </div>
         </div>
         <div className="home_bg">
-        <HomeBackground width="70%" height="10%" />
+        <HomeBackground  width="70%" height="10%" />
         </div>
         <div className="features">
             <div data-aos="fade-down">Comprehensive underneath, simple on the surface</div>

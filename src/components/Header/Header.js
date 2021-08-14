@@ -6,7 +6,7 @@ function Header() {
     const logoIcon = <FontAwesomeIcon icon={faPaperPlane} className="logo-icon"/>
     return (
         <div className="header" data-aos="fade-down">
-            <div className="logo">{logoIcon}  Note Dusk</div>
+            <div className="logo">{logoIcon} Note Dusk</div>
             <div className="sign">
                 <div className="sign-btn"><a href="/" >Log In</a></div>
             </div>

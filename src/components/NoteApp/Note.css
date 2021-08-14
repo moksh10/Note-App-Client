@@ -1,0 +1,43 @@
+.note-div
+{
+    border-top: .25vmin solid grey;
+    border-bottom: .25vmin solid grey;
+    height:12vmin;
+    cursor: pointer;
+    margin-bottom: 1vmin;
+    transition: all .15s;
+    display: flex;
+    align-items: center;
+}
+.note-div:hover
+{
+    background-color: rgba(71, 71, 71, 0.418);
+}
+.note-div > .note-div-title
+{
+    letter-spacing: .1vmin;
+    font-size: 3.5vmin;
+    display: flex;
+    align-items: center;
+    padding-left: 1vmin;
+    flex-wrap: wrap;
+    width:80%;
+    height:100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.note-div > .note-div-delete
+{
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 3vmin;
+    width:20%;
+    transition: all .25s;   
+}
+.note-div-delete:hover
+{
+    font-size: 3.8vmin;
+}
