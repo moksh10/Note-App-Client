@@ -1,45 +1,44 @@
-.login-main-box
+.register-main-box
 {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 59vh;
-    width:100%;
+    width: 100%;
 }
-.login-main-box > .login-container
+.register-main-box > .register-container
 {
-    width:50%;
+    width:80%;
     
-
 }
-.login-container > h1
+.register-container > h1
 {
     color:var(--blue);
     margin: 0;
     font-size: 5vmin;
     line-height: 1.2;
 }
-.login-container > p
+.register-container > .register-form
 {
-    margin: 0;
-    font-size: 2.5vmin;
-}
-.login-form
-{
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 3vmin;
-    height:auto;
 }
-.login-form > label
+.register-form > div
+{
+    height:40%;
+    width:48%;
+}
+.register-form>div>label
 {
     font-size: 2.2vmin;
     display: inline-block;
     margin-bottom: 1vmin;
-
 }
-.login-form > input
+.register-form>div>input
 {
-    min-width:70%;
+    width:100%;
     height:7vmin;
     border: 0;
     border-radius: 1vmin;
@@ -50,30 +49,30 @@
     padding:1vmin;
     background-color: rgb(68, 68, 68);
     transition: all .25s;
+
 }
-.login-form > input:focus
+.register-form > input:focus
 {
     outline: 0;
     border: .1vmin solid var(--blue);
 
 }
-.login-form > .login-submit
+.register-form > .register-submit
 {
-    border: 0;
-    position: relative;
-    margin: 2vmin auto 2vmin auto;
+    
+     margin: 4vmin auto auto auto;
+    width:18%;
     height:7vmin;
-    min-width: 70%;
-    letter-spacing: .2vmin;
-    padding: 1vmin;
-    font-size: 3vmin;
+    letter-spacing: .1vmin;
+    font-size: 2.5vmin;
     transition: all .25s;
     border-radius:.5vmin;
     background-color: var(--blue);
     cursor: pointer;
+    border: 0;
+
 }
-.login-form > .login-submit:hover
+.register-form > .register-submit:hover
 {
     opacity:.6;
 }
-

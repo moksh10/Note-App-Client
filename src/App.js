@@ -3,6 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Home from './components/Home/Home'
 import Login from './components/Login/Login'
+import SignUp from './components/SignUp/SignUp'
 AOS.init({
   offset: 120, 
   delay: 0, 
@@ -15,7 +16,7 @@ function App() {
   // <Home />
   return (
     <>
-    <Login />
+    <SignUp />
     </>
   )
 }

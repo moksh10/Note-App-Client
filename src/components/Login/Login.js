@@ -10,12 +10,12 @@ function Login() {
             <div className="login-container" data-aos="fade-up">
                 <h1>Here you can Login</h1>
                 <p>Let's join us :)</p>
-                <form className="login-form">
-                    <label data-aos="fade-left">Email</label><br />
-                    <input data-aos="fade-left" type="text" /><br />
-                    <label data-aos="fade-right">Password </label><br />
-                    <input type="password" data-aos="fade-right" /><br />
-                    <button className="login-submit" data-aos="fade-up">LOGIN</button>
+                <form className="login-form" data-aos="fade-up">
+                    <label>Email</label><br />
+                    <input type="text" /><br />
+                    <label>Password </label><br />
+                    <input type="password"  /><br />
+                    <button className="login-submit">LOGIN</button>
                 </form>
             </div>
             
