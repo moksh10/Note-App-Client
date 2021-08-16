@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 2vmin;
+    margin-bottom: 8.5vmin;
 
 }
 .header > .logo

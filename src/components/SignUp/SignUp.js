@@ -1,8 +1,10 @@
 import React from 'react'
 import Footer2 from '../Footer/Footer2'
 import Header from '../Header/Header'
+import { useState } from 'react'
 import './signup.css'
 function SignUp() {
+    const [ ds, setstate] = useState("")
     return (
         <>
         <Header />

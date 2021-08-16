@@ -5,7 +5,7 @@ import {ReactComponent as FooterSvg} from './Footer2.svg'
 export default function Footer2() {
     return (
         
-        <FooterSvg opacity=".2"  display="inline"  height="35%" className="waves"/ >
+        <FooterSvg opacity=".2"  display="inline"  height="28%" className="waves"/ >
     )
 }
 

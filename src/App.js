@@ -25,8 +25,8 @@ function App() {
       <Route exact path='/' component={Home}/>
       <Route exact path='/login' component={Login}/>
       <Route exact path='/signup' component={SignUp}/>
-      <Route exact path='/note-app' component={NoteApp}/>
-      <Route exact path='/useraccount' component={Account}/>
+      <Route exact path='/noteapp' component={NoteApp}/>
+      <Route exact path='/account' component={Account}/>
       <Route exact path='/*' component={NoteFound} />
     </Switch>
     </BrowserRouter>

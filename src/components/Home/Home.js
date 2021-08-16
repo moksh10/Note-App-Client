@@ -11,7 +11,7 @@ function Home() {
             <div>The simplest way to keep notes</div>
             <div>Tame your work, organize your life. Remember everything and tackle any project with all your notes in one place.</div>
             <div className="main-btn-area">
-                <div className="main-btn"><a href="/" >Sign Up Now</a></div>
+                <div className="main-btn"><a href="/signup">Sign Up Now</a></div>
             </div>
         </div>
         <div className="home_bg">
