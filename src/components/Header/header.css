@@ -16,6 +16,7 @@
     display: flex;
     letter-spacing: .1vmin;
     min-width: 45%;
+    cursor: pointer;
 }
 
 .header > .logo > .logo-icon

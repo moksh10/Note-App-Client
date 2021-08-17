@@ -4,6 +4,18 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    background-color: rgb(58, 58, 58) !important;
+    color: rgb(82, 82, 82) !important;
+    -webkit-box-shadow: 0 0 0 1000px rgb(68, 68, 68) inset !important;
+    -webkit-text-fill-color: white !important;
+   
+}
+
+
 :root {
     --blue: #0058dd;
 }

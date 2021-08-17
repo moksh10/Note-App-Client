@@ -1,12 +1,24 @@
 import React from 'react'
 import './NoteApp.css'
+import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSearch, faUser,faPlus} from '@fortawesome/free-solid-svg-icons' 
+import API from '../../API/API'
+import Alertbox from '../Alertbox/Alertbox'
 import Note from './Note'
 function NoteApp() {
     const searchIcon = <FontAwesomeIcon icon={faSearch} />
     const userIcon = <FontAwesomeIcon icon={faUser} />
     const plusIcon = <FontAwesomeIcon icon={faPlus} />
+    useEffect(() => {
+       API.get('/noteapp',{ headers: { "Content-Type": "application/json" }})
+        .then((res)=>{
+            console.log(res)
+        })
+        .catch(error=>{
+            console.log(error.response)
+        })
+    }, [])
     return (
         <>
         <div className="note-app">
@@ -21,7 +33,6 @@ function NoteApp() {
                 <div className="sidebar-search">
                     <input type="text" placeholder="Search all notes"/> <div>{searchIcon}</div> 
                 </div>
-                <Note />
             
             
             </div>

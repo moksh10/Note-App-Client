@@ -42,7 +42,7 @@
     height:7vmin;
     border: 0;
     border-radius: 1vmin;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     color:white;
     outline: 0;
     margin-bottom: 2vmin;
@@ -51,12 +51,14 @@
     transition: all .25s;
 
 }
-.register-form > input:focus
+.register-form >div> input:focus
 {
     outline: 0;
-    border: .1vmin solid var(--blue);
+    border: .3vmin solid var(--blue);
 
 }
+
+
 .register-form > .register-submit
 {
     
@@ -81,5 +83,6 @@
     background-color: transparent;
     border: .2vmin solid grey;
     color:grey;
+    opacity: .6;
 }
 

@@ -43,7 +43,7 @@
     height:7vmin;
     border: 0;
     border-radius: 1vmin;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     color:white;
     outline: 0;
     margin-bottom: 2vmin;
@@ -71,6 +71,14 @@
     border-radius:.5vmin;
     background-color: var(--blue);
     cursor: pointer;
+}
+.login-form > .login-submit:disabled
+{
+    
+    background-color: transparent;
+    border: .2vmin solid grey;
+    color:grey;
+    opacity: .6;
 }
 .login-form > .login-submit:hover
 {
