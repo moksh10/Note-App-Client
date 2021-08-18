@@ -3,7 +3,7 @@ import './header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPaperPlane} from '@fortawesome/free-solid-svg-icons' 
 import { useHistory, useRouteMatch } from 'react-router'
-function Header() {
+function Header(props) {
    const {path} = useRouteMatch()
    const history = useHistory()
    const btn = path==='/' || path==='/signup' ? "Log In" : path==='/login' ? "Sign Up" : "Log Out"
@@ -18,8 +18,7 @@ function Header() {
        }
        else
        {
-           
-        history.push('/login')
+           props.logoutUser()
 
        }
 
