@@ -14,9 +14,7 @@ export default function NoteAuth() {
         }
     })
     .catch((error)=>{
-      
-             setPrivate(<Redirect to="/login"/>)
-         
+        setPrivate(<Redirect to="/login"/>)   
     })
   }, [])
   

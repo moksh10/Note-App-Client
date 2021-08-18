@@ -1,18 +1,19 @@
+/* eslint-disable dot-location */
 import React from 'react'
 import './NoteApp.css'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faSearch, faUser,faPlus, faSpinner} from '@fortawesome/free-solid-svg-icons' 
+import {faSearch, faUser,faPlus, } from '@fortawesome/free-solid-svg-icons' 
 import API from '../../API/API'
 import { isInputValid, isHeadingValid,isContentValid } from '../../validators/validators'
 import Alertbox from '../Alertbox/Alertbox'
 import Note from './Note'
 import { useHistory } from 'react-router'
+import Loading from '../Loading/Loading'
 export default function NoteApp() {
     const searchIcon = <FontAwesomeIcon icon={faSearch} />
     const userIcon = <FontAwesomeIcon icon={faUser} />
     const plusIcon = <FontAwesomeIcon icon={faPlus} />
-    const loadingIcon = <FontAwesomeIcon icon={faSpinner} spin color="blue" />
     const history = useHistory()
     const [notes, setNotes] = useState([])
     const [query,setQuery] = useState("") 
@@ -269,7 +270,7 @@ export default function NoteApp() {
     return (
         <>
         <Alertbox alert={alert}/> 
-        {loading?<div className="loading">{loadingIcon}</div>:<></>}
+        {loading?<Loading />:<></>}
         <div className="note-app">
             <div className="header1">
                 All Notes
@@ -284,7 +285,7 @@ export default function NoteApp() {
                     <input type="text" placeholder="Search notes" value={query} onKeyUp={handleQuery} onpaste={handleQuery}  oncut={handleQuery} oninput={handleQuery}onChange={handleQuery}/> 
                      
                 </div>
-            {noteElements.length!==0?noteElements:<div>dsa</div>}
+            {noteElements.length!==0?noteElements:<div className="no-notes">Your notes will appear here</div>}
             </div>
             <div className="note-main">
                 <div className="note-main-title">

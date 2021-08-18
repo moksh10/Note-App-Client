@@ -196,17 +196,17 @@
 {
     opacity: .6;
 }
-.loading{
-    position: fixed;
-    font-size: 9vmin;
-    cursor:progress;
+.no-notes
+{
+    height:8vmin;
+    font-size: 2.1vmin;
     display: flex;
     justify-content: center;
+    color: rgba(128, 128, 128, 0.753);
     align-items: center;
-     min-height:100vh;
-     min-width: 100%;
-     background-color: rgba(92, 122, 136, 0.3);
+    padding: 3vmin;
 }
+
 @media screen and (max-width:720px) {
     .note-app
    {

@@ -12,7 +12,8 @@
 }
 .note-div:hover
 {
-    background-color: rgba(49, 49, 49, 0.418);
+    
+    background-color: rgba(37, 60, 105, 0.507);
 }
 .note-div > .note-div-title
 {
@@ -45,9 +46,10 @@
 
 .note-div-select
 {
-    background-color: rgba(63, 63, 63, 0.5);
+    background-color: rgb(37,60,105);
 }
 .note-div-hide
 {
     display: none;
+    height: 0;
 }
