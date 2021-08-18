@@ -1,11 +1,11 @@
 .loading{
     position: fixed;
-    font-size: 9vmin;
+    font-size: 9.2vmin;
     cursor:progress;
     display: flex;
     justify-content: center;
     align-items: center;
      min-height:100vh;
      min-width: 100%;
-     background-color: rgba(92, 122, 136, 0.3);
+     background-color: rgba(15, 15, 15, 0.637);
 }

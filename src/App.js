@@ -1,15 +1,19 @@
-import './App.css'
+/* eslint-disable import/first */
+import { lazy, Suspense } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Home from './components/Home/Home'
-import Login from './components/Login/Login'
-import SignUp from './components/SignUp/SignUp'
-import NotFound from './components/NotFound/NotFound'
-import Alertbox from './components/Alertbox/Alertbox'
-import NoteAuth from './validators/noteAuth'
 import {Switch, Route} from 'react-router'
 import {BrowserRouter} from 'react-router-dom'
-import AccountAuth from './validators/accountAuth'
+import Loading from './components/Loading/Loading'
+
+const Home = lazy(()=> import('./components/Home/Home'))
+const Login = lazy(()=>  import('./components/Login/Login'))
+const SignUp = lazy(()=> import('./components/SignUp/SignUp'))
+const NotFound = lazy(()=>  import('./components/NotFound/NotFound'))
+const NoteAuth = lazy(()=>  import('./validators/noteAuth'))
+const AccountAuth = lazy(()=> import('./validators/accountAuth'))
+
+
 AOS.init({
   offset: 120, 
   delay: 0, 
@@ -21,19 +25,41 @@ AOS.refresh()
 function App() {
   return (
     <>
-    <Alertbox />
     <BrowserRouter>
     <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route exact path='/login' component={Login}/>
-      <Route exact path='/signup' component={SignUp}/>
-      <Route exact path='/noteapp' render={()=>{ 
-       return <NoteAuth />
-        }}/>
-        <Route exact path='/account' render={()=>{
-        return <AccountAuth />
-        }}/>
-      <Route exact path='/*' component={NotFound} />
+      <Route exact path='/' render={()=>
+      <Suspense fallback={<Loading />}>
+        <Home />
+      </Suspense>
+
+      } />
+      <Route exact path='/login' render={()=>
+      <Suspense fallback={<Loading />}>
+      <Login />
+    </Suspense>
+      }/>
+      <Route exact path='/signup' render={()=>
+      <Suspense fallback={<Loading />}>
+      <SignUp />
+    </Suspense>
+      }/>
+      <Route exact path='/noteapp' render={()=> 
+       <Suspense fallback={<Loading />}>
+       <NoteAuth />
+     </Suspense>
+       
+        }/>
+        <Route exact path='/account' render={()=>
+       <Suspense fallback={<Loading />}>
+       <AccountAuth />
+       </Suspense>
+        }/>
+      <Route exact path='/*' render={()=>
+      <Suspense fallback={<Loading />}>
+      <NotFound />
+      </Suspense>
+      
+      } />
     </Switch>
     </BrowserRouter>
     </>

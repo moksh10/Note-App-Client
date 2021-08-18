@@ -104,7 +104,7 @@ function Account() {
                     <label>Email</label><br />
                     <input type="text" value={userInfo.email}  disabled style={{"background":"transparent"}}/><br />
                     </div>
-                    <div><label>Password </label><br />
+                    <div><label>New Password </label><br />
                     <input type="password" name="password" value={passwords.password} placeholder="minimum 8 characters" onKeyUp={handleChange} onpaste={handleChange}  oncut={handleChange} oninput={handleChange} onChange={handleChange}/><br /></div>
                     <div>
                     <label>Confirm Password </label><br />
