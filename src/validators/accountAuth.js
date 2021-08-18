@@ -14,10 +14,8 @@ export default function AccountAuth() {
         }
     })
     .catch((error)=>{
-         if(error.response.data)
-         {
-             setPrivate(<Redirect to="/login" />)
-         }
+        setPrivate(<Redirect to="/login" />)
+         
     })
   }, [])
   

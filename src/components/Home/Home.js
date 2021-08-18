@@ -3,15 +3,20 @@ import './home.css'
 import { ReactComponent as HomeBackground } from './Home_Background.svg'
 import Header from '../Header/Header'
 import Footer1 from '../Footer/Footer1'
+import { useHistory } from 'react-router'
 function Home() {
+    const history = useHistory()
+    const signUp = () =>{
+        history.push('/signup')
+    }
     return (
         <>
         <Header />
         <div className="main" data-aos="fade-up">
             <div>The simplest way to keep notes</div>
             <div>Tame your work, organize your life. Remember everything and tackle any project with all your notes in one place.</div>
-            <div className="main-btn-area">
-                <div className="main-btn"><a href="/signup">Sign Up Now</a></div>
+            <div className="main-btn-area" onClick={signUp}>
+                <div className="main-btn">Sign Up Now</div>
             </div>
         </div>
         <div className="home_bg">

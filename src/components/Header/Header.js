@@ -28,7 +28,7 @@ function Header() {
        history.push('/')
    }
    
-    const logoIcon = <FontAwesomeIcon icon={faPaperPlane} className="logo-icon"/>
+    const logoIcon = <FontAwesomeIcon icon={faPaperPlane} className="logo-icon" />
     return (
         <div className="header" data-aos="fade-down">
             <div className="logo" onClick={handleLogo}>{logoIcon} Note Dusk</div>

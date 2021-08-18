@@ -31,7 +31,6 @@ function SignUp() {
             {
                 
             setAlert({type:"success",message:`Account created`})
-            
             setUserInfo("")
             setTimeout(()=>{setAlert({type:"success",message:`Account created`})
         },2000)
@@ -40,9 +39,9 @@ function SignUp() {
             }
         })
         .catch((error)=>{
-            setAlert({type:"error",message:`${error.response.data.message}`})
+            setAlert({type:"error",message:`${error.response?error.response.data.message:"Network Error"}`})
             setTimeout(()=>{setAlert({type:"",message:""})
-        },4000)
+        },5000)
             return
                
           
@@ -67,10 +66,10 @@ function SignUp() {
                     <input type="text" name="email" placeholder="example@email.com" value={userInfo.email} onKeyUp={handleChange}onpaste={handleChange}  oncut={handleChange} oninput={handleChange} onChange={handleChange}/><br />
                     </div>
                     <div><label>Password </label><br />
-                    <input type="password" name="password" placeholder="minimum 8 characters" value={userInfo.password} onKeyUp={handleChange} onpaste={handleChange}  oncut={handleChange} oninput={handleChange}onChange={handleChange}/><br /></div>
+                    <input type="password" name="password" placeholder="minimum 8 characters" value={userInfo.password} onKeyUp={handleChange} onpaste={handleChange}  oncut={handleChange} oninput={handleChange} onChange={handleChange}/><br /></div>
                     <div>
                     <label>Confirm Password </label><br />
-                    <input type="password" name="confirmPassword" value={userInfo.confirmPassword} onKeyUp={handleChange}onpaste={handleChange}  oncut={handleChange} oninput={handleChange} onChange={handleChange}/><br />
+                    <input type="password" name="confirmPassword" placeholder="minimum 8 characters" value={userInfo.confirmPassword} onKeyUp={handleChange}onpaste={handleChange}  oncut={handleChange} oninput={handleChange} onChange={handleChange}/><br />
                     </div>
                     <button className="register-submit" onClick={handleSubmit} disabled={isDisabled}>SIGN UP</button>
                 </div>

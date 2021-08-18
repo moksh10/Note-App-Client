@@ -14,7 +14,7 @@ export default function Alertbox(props) {
 
 
     return (
-        <div className={message!==""?className:"hide"}>{message}</div>
+        <div className={message!==""?className:"hide"} >{message}</div>
        
     )
 }

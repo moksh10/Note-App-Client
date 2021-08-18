@@ -29,4 +29,28 @@ const confirmPassword = (value1,value2) => {
 const isInputValid = (value) =>{
     return value!==""
 }
-export {isEmail, isNameValid,isPasswordValid,confirmPassword,isInputValid}
+const isHeadingValid = (value) =>{
+    if(value==="")
+    {
+        return false
+    }
+    if(value.length>100)
+    {
+        return false;
+    }
+    return true
+}
+const isContentValid = (value)=>{
+    if(value==="")
+    {
+        return false
+    }
+    if(value.length>2000)
+    {
+        return false;
+    }
+    return true
+
+
+}
+export {isEmail, isNameValid,isPasswordValid,confirmPassword,isInputValid,isHeadingValid,isContentValid}
