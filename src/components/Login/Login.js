@@ -20,9 +20,7 @@ function Login() {
           API.post('/login',userInfo,{ headers: { "Content-Type": "application/json" } })
           .then((res)=>{
               res=null
-              console.log(res)
               setAlert({type:"",message:``})
-            
               history.push('/noteapp')
               return
           })
