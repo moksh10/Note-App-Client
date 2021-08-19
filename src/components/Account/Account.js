@@ -1,4 +1,5 @@
 import React from 'react'
+import './account.css'
 import Header from '../Header/Header'
 import Footer2 from '../Footer/Footer2'
 import Alertbox from '../Alertbox/Alertbox'

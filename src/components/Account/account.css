@@ -1,0 +1,90 @@
+.register-main-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 59vh;
+    width: 100%;
+}
+.register-main-box > .register-container
+{
+    width:80%;
+    
+}
+.register-container > h1
+{
+    color:var(--blue);
+    margin: 0;
+    font-size: 5vmin;
+    line-height: 1.2;
+}
+.register-container > .register-form
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3vmin;
+}
+.register-form > div
+{
+    height:40%;
+    width:48%;
+}
+.register-form>div>label
+{
+    font-size: 2.2vmin;
+    display: inline-block;
+    margin-bottom: 1vmin;
+}
+.register-form>div>input
+{
+    width:100%;
+    height:7vmin;
+    border: 0;
+    border-radius: 1vmin;
+    font-size: 2.5vmin;
+    color:white;
+    outline: 0;
+    font-size: 2.5vmin;
+    letter-spacing: .1vmin;
+    margin-bottom: 2vmin;
+    padding:1vmin;
+    background-color: rgb(68, 68, 68);
+    transition: all .25s;
+
+}
+.register-form >div> input:focus
+{
+    outline: 0;
+    border: .3vmin solid var(--blue);
+
+}
+
+
+.register-form > .register-submit
+{
+    
+     margin: 4vmin auto auto auto;
+    width:18%;
+    height:7vmin;
+    letter-spacing: .1vmin;
+    font-size: 2.5vmin;
+    transition: all .25s;
+    border-radius:.5vmin;
+    background-color: var(--blue);
+    cursor: pointer;
+    border: 0;
+
+}
+.register-form > .register-submit:hover
+{
+    opacity:.6;
+}
+.register-form > .register-submit:disabled
+{
+    background-color: transparent;
+    border: .2vmin solid grey;
+    color:grey;
+    opacity: .6;
+}
+

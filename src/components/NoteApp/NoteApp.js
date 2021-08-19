@@ -242,7 +242,7 @@ export default function NoteApp() {
          {
            return <Note select={index===selectedNote} selectNote={selectNote} deleteNote={deleteNote} hide={false} value={value} index={index}/>
          }  
-        return <Note select={index===selectedNote} selectNote={selectNote} deleteNote={deleteNote} hide={!title.includes(query)} value={value} index={index}/>
+        return <Note select={index===selectedNote} selectNote={selectNote} deleteNote={deleteNote} hide={!title.toLowerCase().includes(query.toLowerCase())} value={value} index={index}/>
     })
     const getNotes= () => {
         setLoading(true)
