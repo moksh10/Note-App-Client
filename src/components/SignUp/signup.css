@@ -69,7 +69,7 @@
     height:7vmin;
     letter-spacing: .1vmin;
     font-size: 2.5vmin;
-    transition: all .25s;
+    transition: border .25s;
     border-radius:.5vmin;
     background-color: var(--blue);
     cursor: pointer;

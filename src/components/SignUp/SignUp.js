@@ -54,9 +54,9 @@ function SignUp() {
         <Header />
         <Alertbox alert={alert}/>
         <div className="register-main-box">
-            <div className="register-container" data-aos="fade-up">
+            <div className="register-container">
             <h1>Register yourself!</h1>
-                <div className="register-form" data-aos="fade-up" >
+                <div className="register-form">
                     <div>
                     <label>Name</label><br />
                     <input type="text" name="name" placeholder="3-20 characters" value={userInfo.name} onKeyUp={handleChange} onpaste={handleChange}  oncut={handleChange} oninput={handleChange}  onChange={handleChange}/>

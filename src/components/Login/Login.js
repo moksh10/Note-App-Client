@@ -42,10 +42,10 @@ function Login() {
         <Header />
         <Alertbox alert={alert}/>
         <div className="login-main-box">
-            <div className="login-container" data-aos="fade-up">
+            <div className="login-container">
                 <h1>Here you can Login</h1>
                 <p>Let's join us :)</p>
-                <div className="login-form" data-aos="fade-up">
+                <div className="login-form">
                     <label>Email</label><br />
                     <input type="text" name="email" placeholder="Enter email" value={userInfo.email} onKeyUp={handleChange} onpaste={handleChange}  oncut={handleChange} oninput={handleChange}  onChange={handleChange}/><br />
                     <label>Password </label><br />

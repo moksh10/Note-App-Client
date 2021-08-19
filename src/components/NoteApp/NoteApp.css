@@ -68,15 +68,18 @@
   }
   
   .sidebar::-webkit-scrollbar-track {
-    background: rgb(65, 65, 65);
+      
+    background-color: rgba(29, 35, 39, 0.897);
+    
   }
    
   .sidebar::-webkit-scrollbar-thumb {
-    background:rgb(255, 255, 255);
+    background:rgb(145, 145, 145);
+    border-radius: .5vmin;
   }
   
   .sidebar::-webkit-scrollbar-thumb:hover {
-    background: rgb(182, 180, 180); 
+    background: rgb(88, 88, 88); 
   }
 .sidebar-search
 {

@@ -33,6 +33,7 @@ html
  
 ::-webkit-scrollbar-thumb {
   background: grey;
+  border-radius: .5vmin;
 }
 
 /* Handle on hover */
@@ -41,7 +42,7 @@ html
 }
 ::selection
 {
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(179, 179, 179);
   color: rgb(26, 26, 26);
 }
 body {
