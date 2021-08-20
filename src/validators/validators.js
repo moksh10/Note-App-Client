@@ -9,17 +9,14 @@ const isNameValid = (value) => {
     {
         return false;
     }
-    if(value.length>=3&&value.length<=20)
-    {
-        return true;
-    }
-    return false;
+    return true;
 }
 const isPasswordValid = (value) => {
     
     if(value.length>7)
     {
         return true;
+    
     }
     return false;
 }
