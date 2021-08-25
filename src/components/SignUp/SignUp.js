@@ -7,11 +7,14 @@ import API from '../../API/API'
 import Alertbox from '../Alertbox/Alertbox'
 import { isNameValid,isEmail,isPasswordValid,confirmPassword } from '../../validators/validators'
 import { useHistory } from 'react-router'
+import Loading from '../Loading/Loading'
 function SignUp() {
     const history = useHistory()
     const [userInfo,setUserInfo] = useState({name:"",email:"",password:"",confirmPassword:""}) 
     const [isDisabled,setDisabled] = useState(true)
     const [alert,setAlert] = useState({type:"",message:""})
+    const [loading,setLoading] = useState(false)
+   
     const handleChange=(event)=>{ 
 
       setUserInfo({...userInfo, [event.target.name] :event.target.value})
@@ -25,23 +28,23 @@ function SignUp() {
 
     }
     const handleSubmit=() =>{
+        setLoading(true)
         API.post('/signup',userInfo,{headers:{"Content-Type":"application/json"}})
         .then((res)=>{
             if(res.data.created)
             {
-                
+            setLoading(false)                
             setAlert({type:"success",message:`Account created`})
             setUserInfo("")
-            setTimeout(()=>{setAlert({type:"success",message:`Account created`})
-        },2000)
+            setTimeout(()=>{setAlert({type:"",message:``})},2000)
             setTimeout(()=>history.push('/login'),2000)
             
             }
         })
         .catch((error)=>{
+            setLoading(false)
             setAlert({type:"error",message:`${error.response?error.response.data.message:"Network Error"}`})
-            setTimeout(()=>{setAlert({type:"",message:""})
-        },5000)
+            setTimeout(()=>{setAlert({type:"",message:""})},5000)
             return
                
           
@@ -51,6 +54,7 @@ function SignUp() {
     
     return (
         <>
+        {loading?<Loading />:<></>}
         <Header />
         <Alertbox alert={alert}/>
         <div className="register-main-box">

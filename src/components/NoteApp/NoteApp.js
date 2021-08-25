@@ -151,8 +151,7 @@ export default function NoteApp() {
             .catch((error)=>{
                 setAlert({type:"error",message:`${error.response?error.response.data.message:error}`})
                 setLoading(false)
-                setTimeout(()=>{setAlert({type:"",message:""})
-            },5000)
+                setTimeout(()=>{setAlert({type:"",message:""})},5000)
                 return
            
 
